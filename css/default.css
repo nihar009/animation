@@ -1,0 +1,96 @@
+/* this is where all of your CSS styles go */
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+
+.all {
+	font-family: 'chubgothic';
+	font-size: 10em;
+	float: left;
+	
+}
+
+#word {
+    
+    width: 700px;
+	height: 400px;
+	position: relative;
+	left: 50%;
+	top: 50%;
+    margin-left:-150px;
+    margin-top:-200px;
+	
+}
+
+/* p animation */
+
+
+@-webkit-keyframes p_fade{
+    0%    { opacity: 0;}
+    100%  { opacity: 100; }
+}
+
+#p{
+    opacity: 0;
+    color:aquamarine;
+    -webkit-animation: p_fade 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+
+/* o animation */
+
+@-webkit-keyframes o_fade{
+    0%    { opacity: 0;}
+    100%  { opacity: 1; }
+}
+
+#o{
+    opacity: 0;
+    color:aquamarine;
+    -webkit-animation: p_fade 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+/* other o animation */
+
+@-webkit-keyframes m_move{
+    0%   {top: 0px; left: 0px; opacity: 0;}
+    50%  {top: -150px; left: 0px; opacity: 1;}
+    80%  {top: -150px; left: 100px; opacity: 1;}
+    100% {top: 0px; left: 100px; opacity: 1;}
+    
+}
+
+#m{
+    opacity: 0;
+    color: aquamarine;
+    position: relative;
+    -webkit-animation: m_move 2s infinite ease;
+    animation-delay: 1s;
+    
+}
+
+/* l animation */
+
+
+#l{
+    opacity: 0;
+    color: aquamarine;
+    position: relative;
+    -webkit-animation: l_move 2s infinite ease;
+    animation-delay: 1s;
+}
+
+@-webkit-keyframes l_move{
+    0%   {top: 0px; left: 0px; opacity: 0;}
+    50%  {top: 0px; left: 0px; opacity: 1;}
+    80%  {top: 0px; left: -100px; opacity: 1;}
+    100% {top: 0px; left: -100px; opacity: 1;}
+    
+}
